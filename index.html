@@ -21,27 +21,17 @@
 
 <body class="m-0 border-0 bd-example m-0 border-0">
 
-  <!-- <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
-      <div class="carousel-inner text-center p-2">
-        <div class="carousel-item">
-          <p>Frete grátis na primeira compra</p>
+  <div class="carousel-container">
+        <button class="carousel-btn prev-btn">❮</button>
+
+        <div class="carousel-slides">
+            <div class="slide active">Parcele em até 6x sem juros</div>
+            <div class="slide">Frete grátis em compras acima de R$199</div>
+            <div class="slide">Desconto de 10% com pagamento via pix</div>
         </div>
-        <div class="carousel-item active">
-        <p>Parcele em até 6x sem juros</p>
-        </div>
-        <div class="carousel-item">
-        <p>Desconto de 10% via pix</p>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div> -->
+
+        <button class="carousel-btn next-btn">❯</button>
+  </div>
 
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
@@ -74,36 +64,40 @@
 
   <section id="about">
     <div class="container p-5">
-      <h2 class="cssanimation ca__fx-moveFromLeft about-title text-center">Sobre Nós</h2>
-      <p class="about-text">
+      <div class="about-text-container">
+        <h2 class="cssanimation ca__fx-moveFromLeft about-title text-center">Sobre Nós</h2>
+        <p class="about-text">
         Bem-vindo(a) à SkinVerse, um universo onde a beleza da sua pele
         encontra a pureza da natureza. Aqui, acreditamos que o cuidado com a
         pele é um ritual de amor e conexão, tanto com nós mesmos quanto com o
         planeta que nos acolhe.
-      </p>
-      <p class="about-text">
-        Nossa jornada começou com a paixão por ingredientes naturais e o
-        desejo de criar produtos que nutrem a pele de dentro para fora,
-        respeitando a sua individualidade e o meio ambiente. Cada fórmula é
-        cuidadosamente elaborada com ingredientes selecionados a mão,
-        provenientes de fontes sustentáveis e orgânicas, para garantir a
-        máxima qualidade e eficácia.
-      </p>
-      <p class="about-text">
-        Na SkinVerse, você encontrará mais do que cosméticos naturais;
-        encontrará um convite para desacelerar, respirar fundo e se reconectar
-        com a sua essência. Nossos produtos são um abraço da natureza, um
-        presente para a sua pele e um gesto de carinho para o planeta.
-      </p>
-    </div>
-
-    <div class="about-bottom">
+        </p>
+        <p class="about-text">
+          Nossa jornada começou com a paixão por ingredientes naturais e o
+          desejo de criar produtos que nutrem a pele de dentro para fora,
+          respeitando a sua individualidade e o meio ambiente. Cada fórmula é
+          cuidadosamente elaborada com ingredientes selecionados a mão,
+          provenientes de fontes sustentáveis e orgânicas, para garantir a
+          máxima qualidade e eficácia.
+        </p>
+        <p class="about-text">
+          Na SkinVerse, você encontrará mais do que cosméticos naturais;
+          encontrará um convite para desacelerar, respirar fundo e se reconectar
+          com a sua essência. Nossos produtos são um abraço da natureza, um
+          presente para a sua pele e um gesto de carinho para o planeta.
+        </p>
+      </div>
+      
+      <div class="about-bottom">
           <img src="images/Pastel_Cream.png" class="opacity-50 about-img-bottom " alt="">
     </div>
+    </div>
+
+    
   </section>
 
   <section id="special" class="mt-5">
-    <div class="container">
+    <div class="container-special">
       <h2 class="cssanimation ca__fx-moveFromLeft about-title text-center p-5">O que nos torna especiais...</h2>
       <p class="about-text">
         <b>Ingredientes puros e naturais:</b> Priorizamos ingredientes orgânicos, veganos e livres de crueldade animal, para que você possa cuidar da sua pele com a consciência tranquila.
@@ -129,79 +123,275 @@
 
   <div class="container text-center" id="products">
     <h3 class="products-title">Nossos Produtos</h3>
-    <p class="products-subtitle">Lançamento em breve...</p>
-    <div class="products mt-3">
-      <div class="row">
-          <div class="col">
-            <img src="images/Eco-Friendly.png" class="img-product" alt="Frasco de cosmético âmbar com pump em meio a folhas verdes"/>
-          </div>
-          <div class="col">
-            <img src="images/Green-Glass.png" class="img-product" alt="Frasco verde de vidro com conta-gotas sobre água e folhas"/>
-          </div>
-          <div class="col">
-            <img src="images/Natural-Skincare.png" class="img-product" alt="Dois frascos âmbar com pump sobre pedra e fundo de folhas"/>
-          </div>
-      </div>
-    </div> 
-
+    <p class="products-subtitle">Lançamento em breve... Clique em cima de cada produto para saber mais!</p>
+    
     <div class="products mt-4">
-      <div class="row">
+    <div class="row">
         <div class="col">
-          <img src="images/soap.png" class="img-product" alt="Sabonete sólido sobre pedra verde com folhas ao redor"/>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalEcoFriendly">
+                <img src="images/Eco-Friendly.png" class="img-product" alt="Frasco de cosmético âmbar com pump em meio a folhas verdes"/>
+            </a>
         </div>
         <div class="col">
-          <img src="images/matte-green.png" class="img-product" alt="Frasco verde com pump em pedra e fundo de folhas"/>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalGreenGlass">
+                <img src="images/Green-Glass.png" class="img-product" alt="Frasco verde de vidro com conta-gotas sobre água e folhas"/>
+            </a>
         </div>
         <div class="col">
-          <img src="images/green-cream.png" class="img-product" alt="Pote de creme verde sobre base coberta de musgo"/>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalNaturalSkincare">
+                <img src="images/Natural-Skincare.png" class="img-product" alt="Dois frascos âmbar com pump sobre pedra e fundo de folhas"/>
+            </a>
         </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="modalEcoFriendly" tabindex="-1" aria-labelledby="modalEcoFriendlyLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalEcoFriendlyLabel">Loção Corporal Equilíbrio Botânico</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/Eco-Friendly.png" class="img-fluid mb-3" alt="Frasco de cosmético âmbar com pump em meio a folhas verdes"/>
+        <p>Uma dose diária de harmonia para a sua pele. Nossa Loção Corporal Equilíbrio Botânico é a fusão perfeita de ingredientes da natureza, pensada para nutrir e hidratar profundamente. Com uma textura leve e uma fragrância sutil, ela desliza sobre a pele, restaurando a barreira de hidratação e deixando uma sensação de frescor e bem-estar que dura o dia todo. Sinta a pele em seu estado mais puro e equilibrado.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Comprar</button>
       </div>
     </div>
+  </div>
+</div>
 
-    <div class="products mt-4">
-      <div class="row">
-        <div class="col">
-          <img src="images/elegantglass.png" class="img-product" alt="Frasco transparente com conta-gotas e líquido claro"/>
-        </div>
-        <div class="col">
-          <img src="images/elegantbottles.png" class="img-product" alt="Dois frascos elegantes com detalhes dourados ao lado de folhas"/>
-        </div>
-        <div class="col">
-          <img src="images/elegantskincare.png" class="img-product" alt="Frasco de vidro com pump ao lado de vaso com flor rosa"/>
-        </div>
+<div class="modal fade" id="modalGreenGlass" tabindex="-1" aria-labelledby="modalGreenGlassLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalGreenGlassLabel">Elixir Hidratante Aqua Essência</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/Green-Glass.png" class="img-fluid mb-3" alt="Frasco verde de vidro com conta-gotas sobre água e folhas"/>
+        <p>Mergulhe em uma experiência de hidratação intensa. O Elixir Aqua Essência é um sérum facial leve, com a potência da água e extratos revitalizantes. Sua fórmula de rápida absorção penetra nas camadas mais profundas da pele, combatendo o ressecamento e devolvendo o viço e a elasticidade. É o orvalho da manhã em sua rotina de beleza, que traz um toque de frescor e a luminosidade que a sua pele merece.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Comprar</button>
       </div>
     </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalNaturalSkincare" tabindex="-1" aria-labelledby="modalNaturalSkincareLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalNaturalSkincareLabel">Kit de Cuidado Revitalizante Dupla Aura</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/Natural-Skincare.png" class="img-fluid mb-3" alt="Dois frascos âmbar com pump sobre pedra e fundo de folhas"/>
+        <p>Celebre o ritual do autocuidado com a Pura Vitalidade. Esta dupla é a resposta completa para uma pele radiante e saudável. O primeiro frasco é um sabonete líquido que limpa suavemente, respeitando a hidratação natural. O segundo é um hidratante que sela a umidade, deixando a pele macia e perfumada. Juntos, eles transformam o banho em um momento de renovação, onde a natureza cuida de você de forma única e completa.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Comprar</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+   <div class="products mt-4">
+    <div class="row">
+        <div class="col">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalSabonete">
+                <img src="images/soap.png" class="img-product" alt="Sabonete sólido sobre pedra verde com folhas ao redor"/>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalMatteGreen">
+                <img src="images/matte-green.png" class="img-product" alt="Frasco verde com pump em pedra e fundo de folhas"/>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalGreenCream">
+                <img src="images/green-cream.png" class="img-product" alt="Pote de creme verde sobre base coberta de musgo"/>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalSabonete" tabindex="-1" aria-labelledby="modalSaboneteLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalSaboneteLabel">Sabonete em Barra Argila Verde</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/soap.png" class="img-fluid mb-3" alt="Sabonete sólido sobre pedra verde com folhas ao redor"/>
+        <p>Pura limpeza, de volta à origem. Nosso Sabonete em Barra de Argila Verde foi criado para purificar a pele de forma suave e eficaz. Sua fórmula enriquecida com extratos vegetais e a argila, conhecida por suas propriedades purificantes e tonificantes, produz uma espuma rica e cremosa. Deixe a natureza remover as impurezas, revelando uma pele fresca, renovada e deliciosamente perfumada.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Comprar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalMatteGreen" tabindex="-1" aria-labelledby="modalMatteGreenLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalMatteGreenLabel">Loção Essencial Floresta</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/matte-green.png" class="img-fluid mb-3" alt="Frasco verde com pump em pedra e fundo de folhas"/>
+        <p>O frescor da floresta na sua pele. A Loção Essencial Floresta é um convite para um momento de reconexão. Com sua textura leve e de rápida absorção, ela nutre profundamente, deixando a pele macia e com um toque aveludado. Enriquecida com ativos botânicos, sua fragrância sutil e herbácea transporta os sentidos para o coração da mata, proporcionando uma experiência de bem-estar e equilíbrio a cada aplicação.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Comprar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalGreenCream" tabindex="-1" aria-labelledby="modalGreenCreamLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalGreenCreamLabel">Creme Nutritivo Toque de Musgo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/green-cream.png" class="img-fluid mb-3" alt="Pote de creme verde sobre base coberta de musgo"/>
+        <p>Uma hidratação tão profunda quanto a terra. Nosso Creme Corporal Toque de Musgo é a resposta para a pele que anseia por nutrição e maciez. Sua textura aveludada e rica é facilmente absorvida, criando uma barreira protetora que retém a umidade por longas horas. A sensação é de um abraço carinhoso da natureza, com um perfume suave que lembra o frescor do musgo. Para uma pele visivelmente mais macia, suave e saudável.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Comprar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="products mt-4">
+    <div class="row">
+        <div class="col">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalElegantGlass">
+                <img src="images/elegantglass.png" class="img-product" alt="Frasco transparente com conta-gotas e líquido claro"/>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalElegantBottles">
+                <img src="images/elegantbottles.png" class="img-product" alt="Dois frascos elegantes com detalhes dourados ao lado de folhas"/>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalElegantSkincare">
+                <img src="images/elegantskincare.png" class="img-product" alt="Frasco de vidro com pump ao lado de vaso com flor rosa"/>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="modalElegantGlass" tabindex="-1" aria-labelledby="modalElegantGlassLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalElegantGlassLabel">Elixir Iluminador Revita Aura</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/elegantglass.png" class="img-fluid mb-3" alt="Frasco transparente com conta-gotas e líquido claro"/>
+        <p>Desperte a luz natural da sua pele. Revita Aura é um elixir corporal que nutre profundamente, revelando um toque sedoso e um brilho sutilmente dourado. Com extratos botânicos e óleos leves, sua fórmula de rápida absorção ilumina a pele do corpo todo, deixando-a radiante e irresistivelmente macia. Uma carícia de pura elegância para o seu ritual de beleza diário.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Comprar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalElegantBottles" tabindex="-1" aria-labelledby="modalElegantBottlesLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalElegantBottlesLabel">Coleção Duet Aura Essencial</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/elegantbottles.png" class="img-fluid mb-3" alt="Dois frascos elegantes com detalhes dourados ao lado de folhas"/>
+        <p>A beleza da união em sua forma mais pura. A Coleção Duet Aura Essencial traz a perfeição de dois rituais em um só kit: o frasco dourado, um óleo de hidratação intensa para nutrir a pele antes do banho, e o frasco escuro, um perfume corporal que sela a hidratação e exala uma fragrância inesquecível. Uma dupla que transforma a rotina em um momento de puro deleite e autocuidado.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Comprar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalElegantSkincare" tabindex="-1" aria-labelledby="modalElegantSkincareLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalElegantSkincareLabel">Sérum Facial Botânico Flor de Lis</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/elegantskincare.png" class="img-fluid mb-3" alt="Frasco de vidro com pump ao lado de vaso com flor rosa"/>
+        <p>O segredo da vitalidade em uma gota. O Sérum Facial Botânico Flor de Lis é um convite à renovação da pele. Sua textura leve e aveludada, enriquecida com a essência da Flor de Lis, combate os sinais do tempo e proporciona firmeza, maciez e um viço natural. Aplique e sinta a pele absorver a leveza e a fragrância de um jardim, revelando uma aparência mais jovem e radiante a cada uso.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Comprar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
   </div>
 
   <section id="feedback" class="mt-5">
     <h2 class="cssanimation ca__fx-moveFromLeft about-title text-center">Feedback dos clientes</h2>
     <div class="container-feedback">
-      
+       
     </div>
   </section>
 
 
-  <form class="text-center form-container p-3">
+  <form class="text-center form-container p-2">
       <div class="mb-3 container">
-        <div class="row">
-          <div class="col-5">
+        <div class="row align-items-center justify-content-center">
             <label for="exampleInputEmail1" class="form-label fs-5 form-text">Cadastre-se e ganhe um cupom de boas-vindas!</label>
-          </div>
           <div class="col-5">
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
           </div>
           <div class="col-2">
-            <button type="submit" class="btn fs-5">Cadastrar</button>
+            <button type="submit" class="btn fs-5">Inscreva-se</button>
           </div>
         </div>
       </div>
     </form>
 
-  <footer class="rodape p-2 fs-5">
-    <div class="container text-center">
-      <p class="text-muted">© 2025 SkinVerse. Todos os direitos reservados. | Desenvolvido por <a href="https://github.com/raimnascimento">Raissa Nascimento</a></p>
+  <footer class="rodape fs-6">
+    <div class="container-rodape text-center">
+      <p>© 2025 SkinVerse. Todos os direitos reservados. | Desenvolvido por <a class="link-rodape" href="https://github.com/raimnascimento">Raissa Nascimento</a></p>
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js" defer></script>
+  
 </body>
 </html>
