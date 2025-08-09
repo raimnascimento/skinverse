@@ -1,0 +1,16 @@
+.rodape {
+  color: #232222;
+  font-size: .9rem;
+  padding: .4rem 0;
+}   
+
+.link-rodape {
+  color: #e5dddd;
+  text-decoration: none;
+}
+
+.container-rodape {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

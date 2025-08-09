@@ -1,0 +1,114 @@
+#feedback {
+  background-color: #f4f4f0; 
+  padding: 2rem 1rem;
+  min-height: 100vh;
+}
+
+.container-feedback {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.feedback-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  padding: 20px;
+  max-width: 280px;
+  text-align: center;
+  flex: 1 1 calc(28% - 30px);
+  max-width: calc(28% - 30px);
+}
+
+.feedback-card img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.feedback-text {
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.feedback-card h5 {
+  color: #777;
+  font-weight: 500;
+}
+
+/* From Uiverse.io by andrew-demchenk0 */ 
+
+.rating {
+  display: flex;
+  justify-content: center;
+}
+
+.rating:not(:checked) > input {
+  position: absolute;
+  appearance: none;
+}
+
+.rating:not(:checked) > label {
+  float: right;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ffa723;
+}
+
+.rating:not(:checked) > label:before {
+  content: '★';
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+  color: #e58e09;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #ff9e0b;
+}
+
+.rating > input:checked ~ label {
+  color: #ffa723;
+}
+
+.form-container {
+  background-color: #f4f4f0;
+}
+
+.form-text {
+  font-weight: 700;
+}
+
+.form-control {
+  background-color: #f8f8f8; 
+  border-color: var(--primary-color);    
+  color: #333;             
+}
+
+.form-control:focus {
+  background-color: #fff; 
+  border-color: #6c757d;  
+  box-shadow: 0 0 0 0.25rem rgba(108, 117, 125, 0.25);
+}
+
+.btn {
+  background-color: #5a6452; 
+  font-weight: 500;
+  border: 1px solid #79876e;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #485043; 
+}

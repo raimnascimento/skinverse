@@ -1,0 +1,79 @@
+#about { 
+  padding: 3rem 1.5rem;
+  background: linear-gradient(to right, #cce0c2, #e4e9c8);
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem; 
+  max-width: 1200px; 
+  margin: 0 auto;
+}
+
+.about-image img {
+  width: 450px; 
+  border-radius: 20px;
+}
+
+.about-text {
+  flex: 1; 
+  max-width: 60%; 
+}
+
+.about-text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
+  font-weight: bold;
+}
+
+.about-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: #2e4d26;
+  flex-shrink: 0;
+}
+
+.about-item p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+#special {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #181818; 
+  z-index: 1;
+}
+
+#special::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('/images/tropical-bg.png') center/cover no-repeat;
+  opacity: 0.1; 
+  z-index: -1; 
+}
+
+.container-special {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.special-text {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
