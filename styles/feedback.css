@@ -103,6 +103,9 @@
 }
 
 .btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2rem;
   background-color: #5a6452; 
   font-weight: 500;
   border: 1px solid #79876e;
@@ -111,4 +114,36 @@
 
 .btn:hover {
   background-color: #485043; 
+}
+
+@media screen and (min-width: 880px) and (max-width: 1000px) {
+  .feedback-card {
+    max-width: 280px;
+    flex: 1 1 calc(50% - 60px);
+    max-width: calc(50% - 60px);
+  }
+  .btn {
+    width: 100%;
+    font-size: .9rem;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .feedback-card {
+    flex: 1 1 calc(50% - 30px);
+    max-width: calc(50% - 30px);
+  }
+
+  .btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 880px) {
+  .btn {
+    font-size: .7rem;
+  }
 }

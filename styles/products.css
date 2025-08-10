@@ -3,7 +3,8 @@
 }
 
 .products-title {
-  font-size: 2.8rem;
+  font-size: 2.2rem;
+  font-weight: bold;
   margin: 1px 0;
 }
 
@@ -27,6 +28,20 @@
   transform: scale(1.05);
   transition: transform 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 880px) {
+  #products {
+    padding: 3rem 0rem;
+  }
+
+  .products-title {
+    font-size: 2rem;
+  }
+
+  .img-product {
+    width: 100%;
+  }
 }
 
 
