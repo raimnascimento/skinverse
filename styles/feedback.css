@@ -146,6 +146,10 @@
   .btn {
     font-size: .7rem;
   }
+
+  .form-text {
+    font-size: 1rem;
+  }
 }
 
 
@@ -159,5 +163,9 @@
     width: 100%;
     padding: 10px;
     font-size: .5rem;
+  }
+
+  .form-text {
+    font-size: .9rem;
   }
 }

@@ -44,6 +44,22 @@
   }
 }
 
+@media screen and (max-width: 590px) {
+  #products {
+    padding: 3rem 0rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .products-title {
+    font-size: 2rem;
+  }
+
+  .img-product {
+    width: 90%;
+  }
+}
+
 
 
 
