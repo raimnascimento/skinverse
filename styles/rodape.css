@@ -14,3 +14,9 @@
   align-items: center;
   justify-content: center;
 }
+
+@media screen and (max-width: 774px) {
+  .rodape {
+    font-size: .6rem;
+  }   
+}
